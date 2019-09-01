@@ -1,0 +1,124 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 180px 50px 180px;
+    animation: fade-in 2s;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+.footer-information{
+    width: 240px;
+    font-size: 1.1em;
+}
+.footer-information .record {
+    margin-top: 10px;
+}
+.the-design{
+    display: inline-block;
+    height:25px ;
+    width: 140px;
+    max-height: 50px;
+    max-width: 280px;
+    background-image: url("../../assets/images/blackdong-navy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.footer-article{
+    width: 240px;
+}
+.footer-article p,.footer-comment p{
+    font-size: 1.1em;
+    width: 240px;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/ /*不允许出现半汉字截断*/
+    color:rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+ }
+/*.footer-article-title,.footer-comment-title{*/
+    /*!*letter-spacing: 2px;*!*/
+    /*!*line-height: 3vh;*!*/
+    /*!*font-size: xx-large;*!*/
+    /*!*margin-bottom: 20px;*!*/
+/*}*/
+.footer-article .title,.footer-comment .title{
+    font-size: 1em;
+}
+.footer-article p:hover{
+    color:rgba(0, 0, 0, 0.6);
+    transition: all 0.5s;
+}
+.footer-comment{
+    width: 240px;
+}
+
+.footer-comment li a{
+    text-decoration: none;
+    color: #000;
+}
+/*.footer-comment .title::before{*/
+    /*content: attr(data-name);*/
+    /*color:rgb(64, 189, 255);*/
+/*}*/
+@font-face {
+    font-family: Pixel;
+    src: url("../../assets/font/skrewdupsoulz.ttf");
+}
+@media screen and (width: 768px){
+    .footer{
+        padding: 20px 145px;
+    }
+}
+@media screen and (max-width: 615px) {
+    .footer{
+        padding: 20px 50px;
+    }
+    .footer-information{
+        margin: 0 auto;
+    }
+    .footer-article{
+        display: none;
+    }
+    .footer-comment{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .footer > div{
+        margin: 0 auto;
+    }
+    .footer-article{
+        display: none;
+    }
+    .footer-comment{
+        display: none;
+    }
+}
+@media screen and (max-width: 613px) {
+    .footer > div{
+        margin: 0 auto;
+    }
+    .footer-comment{
+        display: none;
+    }
+}
+@media screen and (max-width: 1076px) {
+    .footer > div{
+    }
+    .footer-comment{
+        display: none;
+    }
+    .footer-comment{
+        display: none;
+    }
+}
+
+
+

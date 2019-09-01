@@ -1,0 +1,84 @@
+.nav{
+    display: inline-block;
+    position: relative;
+    width:100%;
+    padding: 0 170px;
+    box-sizing: border-box;
+    min-height: 10vh;
+    line-height: 10vh;
+    text-align: left;
+    animation: fade-in 2s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+    overflow: hidden;
+}
+.nav-base{
+
+}
+.nav-logo{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.nav-logo img{
+    position: absolute;
+    top:50%;
+    transform: translate(0%,-50%);
+    border-radius: 50%;
+}
+.nav-list{
+    position: absolute;
+    top:50%;
+    transform: translate(0%,-50%);
+    margin-left: 70px;
+    white-space: nowrap;
+}
+.nav-list a{
+    font-family: siyuansongti;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(49, 49, 49);
+}
+.nav-list a:hover{
+    color:salmon;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 615px) {
+    .nav{
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+    .nav-list a{
+        margin: 0 5px;
+    }
+    .nav-list{
+        margint: 0px auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .nav{
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .nav{
+        margin: 0 auto;
+        padding: 0 55px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .nav{
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+}
+@media screen and (width: 768px) {
+    .nav{
+        margin: 0 auto;
+        padding: 0 145px;
+    }
+}
+
+
